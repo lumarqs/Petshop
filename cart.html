@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="navigation">
+        <h1>Cãotinho Feliz</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="servicos.html">Serviços Pet</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="cart.html">Carrinho 🛒</a></li>
+        </ul>
+    </div>
+    <h1>Seu Carrinho</h1>
+    
+    <div id="carrinho-container">
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="total-container">
+            <h2>Total: R$ <span id="total-value">0,00</span></h2>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script>
+        function carregarCarrinho() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const tbody = document.querySelector('#cart-table tbody');
+            tbody.innerHTML = '';
+
+            if (cart.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="3">Seu carrinho está vazio</td></tr>';
+            } else {
+                let total = 0;
+                cart.forEach((item, index) => {
+                    total += item.price;
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${item.name}</td>
+                        <td>R$ ${item.price.toFixed(2)}</td>
+                        <td><button class="remove-btn" onclick="removerItem(${index})">Remover</button></td>
+                    `;
+                    tbody.appendChild(row);
+                });
+                document.getElementById('total-value').textContent = total.toFixed(2);
+            }
+        }
+
+        function removerItem(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);  
+            localStorage.setItem('cart', JSON.stringify(cart)); 
+            carregarCarrinho();  
+        }
+
+        window.onload = carregarCarrinho;
+    </script>
+</body>
+</html>

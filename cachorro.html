@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos para Pets - Cãotinho Feliz</title>
+    <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+    <div class="navigation">
+        <h1>Cãotinho Feliz</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="servicos.html">Serviços Pet</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cart.html">Carrinho 🛒</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="gatos.html">Gato</a></li>
+            <li><a href="cachorro.html">Cachorro</a></li>
+            <li><a href="passaro.html">Pássaro</a></li>
+            <li><a href="peixe.html">Peixe</a></li>
+            <li><a href="pets.html">Outros Pets</a></li>
+            <li><a href="casa.html">Casa e Jardim</a></li>
+            <li><a href="promo.html">Promoções</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="cachorros" class="product-category">
+            <h2>Produtos para Cães</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://www.casadobicho.com/image/cache/data/produtos/caes/alimentacao/racao-seca2/special-dog-prime-adultos-racas-grandes--926x926.png" alt="Ração para Cães">
+                    <h3>Ração Premium para Cães</h3>
+                    <p>Nutrição completa para o seu amigo de quatro patas.</p>
+                    <span>R$ 150,00</span>
+                    <button onclick="addToCart('Ração Premium para Cães', 150)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://cdn.ultrafarma.com.br/static/produtos/824251/large-638291741880283807-824251.jpg" alt="Tapete Higiênico para Cães">
+                    <h3>Tapete Higiênico para Cães</h3>
+                    <p>Alta absorção, perfeito para manter sua casa limpa.</p>
+                    <span>R$ 100,00 (pacote com 50 unidades)</span>
+                    <button onclick="addToCart('Tapete Higiênico para Cães', 100)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://down-br.img.susercontent.com/file/494a75d28a0da6188d0fb9226b8773cf" alt="Osso de Borracha para Cães">
+                    <h3>Osso de Borracha</h3>
+                    <p>Durável e ideal para cães que adoram mastigar.</p>
+                    <span>R$ 25,00</span>
+                    <button onclick="addToCart('Osso de Borracha', 25)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://saopet.com.br/image/cache/catalog/HIMG9235-900x900.JPG" alt="Comedouro Antiderrapante para Cães">
+                    <h3>Comedouro Antiderrapante</h3>
+                    <p>Ideal para evitar derramamentos durante a refeição.</p>
+                    <span>R$ 30,00</span>
+                    <button onclick="addToCart('Comedouro Antiderrapante', 30)">Adicionar ao Carrinho</button>
+                </div>                                   
+                <div class="product">
+                    <img src="https://cdn.shopify.com/s/files/1/0540/6018/7841/files/PAGINA_0_-_Roupa_de_frio_para_cachorro_-_Dog_Jacket_480x480.jpg?v=1651865014" alt="Roupinha de Frio para Cães">
+                    <h3>Roupinha de Frio</h3>
+                    <p>Conforto e estilo para o seu pet nos dias frios.</p>
+                    <span>R$ 70,00</span>
+                    <button onclick="addToCart('Roupinha de Frio', 70)">Adicionar ao Carrinho</button>
+                </div>                
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/573283/kit_combo_para_banho_em_caes_shampoo_pelos_escuros_e_condicionador_neutro_sanol_dog_537225_1_20200827161914.jpg" alt="Shampoo para Cães">
+                    <h3>Shampoo Neutro para Cães</h3>
+                    <p>Fórmula suave, ideal para peles sensíveis.</p>
+                    <span>R$ 45,00</span>
+                    <button onclick="addToCart('Shampoo Neutro para Cães', 45)">Adicionar ao Carrinho</button>
+                </div>                
+                <div class="product">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_772052-MLB73591293528_122023-O.webp" alt="Coleira para Cães">
+                    <h3>Coleira para Cães</h3>
+                    <p>Coleira resistente e confortável.</p>
+                    <span>R$ 40,00</span>
+                    <button onclick="addToCart('Coleira para Cães', 40)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_710762-MLU73076364130_112023-O.webp" alt="Brinquedo para Cães">
+                    <h3>Brinquedo Interativo</h3>
+                    <p>Divirta seu cão com este brinquedo estimulante.</p>
+                    <span>R$ 30,00</span>
+                    <button onclick="addToCart('Brinquedo Interativo', 30)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/681226/kit_de_brinquedo_para_gato_6_bolinhas_mix_pula_pena_chocalho_1319_1_01dc84154e7b47f7b6154c67fe42b21c.jpg" alt="Brinquedo para Gatos">
+                    <h3>Bolinha de Gato</h3>
+                    <p>Para horas de diversão.</p>
+                    <span>R$ 15,00</span>
+                    <button onclick="addToCart('Bolinha de Gato', 15)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images-americanas.b2w.io/produtos/4536851049/imagens/kit-pet-shop-12-brinquedos-de-borracha-atacado-mordedor-pet-p-caes-cachorro/4536851049_1_large.jpg" alt="Brinquedo para Cães">
+                    <h3>Brinquedo de Borracha</h3>
+                    <p>Durável e divertido para seu cão.</p>
+                    <span>R$ 35,00</span>
+                    <button onclick="addToCart('Brinquedo de Borracha', 35)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/629332/cama_pet_artesanal_concha_celebre_comfort_pet_3287_1_b338a29bcdc2de3070ce4f6e62fbde39.jpg" alt="Cama para Pets">
+                    <h3>Cama Confortável</h3>
+                    <p>Perfeita para os momentos de descanso do seu pet.</p>
+                    <span>R$ 200,00</span>
+                    <button onclick="addToCart('Cama Confortável', 200)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images-americanas.b2w.io/produtos/5913913980/imagens/caixa-de-transporte-pet-animal-pequeno-porte-n-1-gato-cachorro-coelho/5913913980_1_large.jpg" alt="Caixa de Transporte">
+                    <h3>Caixa de Transporte</h3>
+                    <p>Ideal para viagens com seu pet.</p>
+                    <span>R$ 150,00</span>
+                    <button onclick="addToCart('Caixa de Transporte', 150)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images-americanas.b2w.io/produtos/4536851049/imagens/kit-pet-shop-12-brinquedos-de-borracha-atacado-mordedor-pet-p-caes-cachorro/4536851049_1_large.jpg" alt="Brinquedo para Cães">
+                    <h3>Brinquedo de Borracha</h3>
+                    <p>Durável e divertido para seu cão.</p>
+                    <span>R$ 35,00</span>
+                    <button onclick="addToCart('Brinquedo de Borracha', 35)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cãotinho Feliz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="cart.js"></script> <!-- Inclua o script aqui -->
+</body>
+</html>

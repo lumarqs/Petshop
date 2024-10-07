@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box; /* Para incluir padding e border no cálculo de largura e altura */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+}
+
+header {
+    background: #e76f51; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto do cabeçalho */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.product-category {
+    margin: 40px 0; /* Espaçamento vertical entre as seções */
+    text-align: center; /* Centraliza o título da seção */
+}
+
+.products {
+    display: flex; /* Exibe os produtos em linha */
+    justify-content: center; /* Centraliza os produtos */
+    flex-wrap: wrap; /* Permite que os produtos se movam para a linha seguinte se não houver espaço */
+}
+
+.product {
+    background: #fff; /* Cor de fundo dos produtos */
+    border: 1px solid #ddd; /* Borda dos produtos */
+    border-radius: 10px; /* Bordas arredondadas nos produtos */
+    margin: 10px; /* Espaçamento em volta de cada produto */
+    padding: 15px; /* Espaçamento interno dos produtos */
+    text-align: center; /* Centraliza o texto dos produtos */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para os produtos */
+}
+
+.product img {
+    width: 200px; /* Largura fixa para as imagens dos produtos */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.contact-section {
+    padding: 20px;
+    background: #fff; /* Fundo branco para a seção de contato */
+    margin: 40px 0; /* Margem em volta da seção de contato */
+    border-radius: 10px; /* Bordas arredondadas na seção de contato */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave na seção de contato */
+}
+
+.navigation {
+    height: 70px;
+    background-image: linear-gradient(45deg, #d9ed92, #b5e48c, #99d98c, #76c893, #52b69a, #34a0a4, #168aad, #1a759f, #1e6091, #184e77);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+    box-shadow: 0px 17px 59px 11px rgba(0, 8, 20, 0.62);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav {
+    height: 70px;
+    background-color: #edf2f4;
+    background-size: 300% 300%;
+    box-shadow: 0px 17px 59px 11px rgba(0, 8, 20, 0.62);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    padding: 10px 15px;
+    text-align: center;
+    align-items: center;
+    align-content: center        ;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.navigation h1 {
+    color: #edf2f4;
+    font-family: sans-serif;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    padding: 10px 15px;
+}
+
+a:hover {
+    background-color: #76c893;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #76c893; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse sobre o botão */
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+
+button:hover {
+    background-color: #d54b38; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.product-category h2 {
+    font-size: 40px;
+}

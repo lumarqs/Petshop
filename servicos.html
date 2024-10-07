@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Pet - Cãotinho Feliz</title>
+    <link rel="stylesheet" href="servicos.css">
+</head>
+<body>
+    <div class="navigation">
+        <h1>Cãotinho Feliz</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="servicos.html">Serviços Pet</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cart.html">Carrinho 🛒</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="gatos.html">Gato</a></li>
+            <li><a href="cachorro.html">Cachorro</a></li>
+            <li><a href="passaro.html">Pássaro</a></li>
+            <li><a href="peixe.html">Peixe</a></li>
+            <li><a href="pets.html">Outros Pets</a></li>
+            <li><a href="casa.html">Casa e Jardim</a></li>
+            <li><a href="promo.html">Promoções</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="servicos-pet">
+            <h2>Nossos Serviços para Pets</h2>
+            <p>Oferecemos uma variedade de serviços para garantir o bem-estar do seu pet!</p>
+            <div class="services">
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/19145897/pexels-photo-19145897/free-photo-of-mulher-trabalhando-animal-bicho.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Banho e Tosa">
+                    <h3>Banho e Tosa</h3>
+                    <p>Deixe seu pet limpo e bem cuidado com nossos serviços profissionais de banho e tosa.</p>
+                    <span>R$ 80,00</span>
+                    <button onclick="addToCart('Banho e Tosa', 80)">Agendar Serviço</button>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/14208096/pexels-photo-14208096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hospedagem para Pets">
+                    <h3>Hospedagem para Pets</h3>
+                    <p>Oferecemos um lar temporário aconchegante para o seu pet enquanto você viaja.</p>
+                    <span>R$ 150,00 por dia</span>
+                    <button onclick="addToCart('Hospedagem para Pets', 150)">Agendar Serviço</button>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/20897076/pexels-photo-20897076/free-photo-of-mulher-caminhando-andando-arvores.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Passeio para Cães">
+                    <h3>Passeio para Cães</h3>
+                    <p>Caminhadas supervisionadas por profissionais para garantir a saúde e felicidade do seu cão.</p>
+                    <span>R$ 30,00 por passeio</span>
+                    <button onclick="addToCart('Passeio para Cães', 30)">Agendar Serviço</button>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/7474857/pexels-photo-7474857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Veterinário em Casa">
+                    <h3>Veterinário em Casa</h3>
+                    <p>Atendimento veterinário domiciliar para maior conforto e cuidado com seu pet.</p>
+                    <span>R$ 200,00</span>
+                    <button onclick="addToCart('Veterinário em Casa', 200)">Agendar Serviço</button>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/5482552/pexels-photo-5482552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Adestramento">
+                    <h3>Adestramento</h3>
+                    <p>Adestre seu pet com métodos positivos e profissionais qualificados.</p>
+                    <span>R$ 120,00 por sessão</span>
+                    <button onclick="addToCart('Adestramento', 120)">Agendar Serviço</button>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/5745223/pexels-photo-5745223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Day Care para Pets">
+                    <h3>Day Care para Pets</h3>
+                    <p>Cuidados diários e diversão garantida para o seu pet em nosso Day Care.</p>
+                    <span>R$ 90,00 por dia</span>
+                    <button onclick="addToCart('Day Care para Pets', 90)">Agendar Serviço</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cãotinho Feliz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

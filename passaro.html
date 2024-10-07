@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos para Pets - Cãotinho Feliz</title>
+    <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+    <div class="navigation">
+        <h1>Cãotinho Feliz</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="servicos.html">Serviços Pet</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cart.html">Carrinho 🛒</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="gatos.html">Gato</a></li>
+            <li><a href="cachorro.html">Cachorro</a></li>
+            <li><a href="passaro.html">Pássaro</a></li>
+            <li><a href="peixe.html">Peixe</a></li>
+            <li><a href="pets.html">Outros Pets</a></li>
+            <li><a href="casa.html">Casa e Jardim</a></li>
+            <li><a href="promo.html">Promoções</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="passaros" class="product-category">
+            <h2>Produtos para Pássaros</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTEyvbDXNlRObY5r8N4GPck6ZfqrMkQx9zeA&s" alt="Ração para Pássaros">
+                    <h3>Ração Premium para Pássaros</h3>
+                    <p>Ração balanceada para aves exóticas e domésticas.</p>
+                    <span>R$ 50,00</span>
+                    <button onclick="addToCart('Ração Premium para Pássaros', 50)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://minhacasapets.com.br/files/catalog/product/whatsapp-image-2022-03-30-at-15.53.42.jpeg" alt="Comedouro para Pássaros">
+                    <h3>Comedouro Suspenso</h3>
+                    <p>Ideal para manter a comida fresca e protegida.</p>
+                    <span>R$ 30,00</span>
+                    <button onclick="addToCart('Comedouro Suspenso para Pássaros', 30)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_918226-MLB71695811987_092023-O.webp" alt="Bebedouro para Pássaros">
+                    <h3>Bebedouro Automático</h3>
+                    <p>Garanta água limpa e fresca para seus pássaros.</p>
+                    <span>R$ 25,00</span>
+                    <button onclick="addToCart('Bebedouro Automático para Pássaros', 25)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1149236/brinquedo_para_papagaio_aves_passaros_poleiro_giratorio_97_1_9ef7c9ea59ef6352eb1fc17c07ffdcf2.jpg" alt="Brinquedo para Pássaros">
+                    <h3>Brinquedo de Madeira para Pássaros</h3>
+                    <p>Estimule o comportamento natural de brincadeiras das aves.</p>
+                    <span>R$ 20,00</span>
+                    <button onclick="addToCart('Brinquedo de Madeira para Pássaros', 20)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://down-br.img.susercontent.com/file/sg-11134201-22110-ictcnlio1zjv75" alt="Banheira para Pássaros">
+                    <h3>Banheira para Pássaros</h3>
+                    <p>Perfeita para manter as penas limpas e saudáveis.</p>
+                    <span>R$ 40,00</span>
+                    <button onclick="addToCart('Banheira para Pássaros', 40)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/928979/gaiola_amasavi_pixarro_grande_1889_1_344c8301f5c685cc65249d2df8a4480e.jpg" alt="Gaiola para Pássaros">
+                    <h3>Gaiola Grande para Pássaros</h3>
+                    <p>Espaço confortável e seguro para seus pássaros.</p>
+                    <span>R$ 150,00</span>
+                    <button onclick="addToCart('Gaiola Grande para Pássaros', 150)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://a-static.mlcdn.com.br/450x450/racao-mix-de-sementes-e-frutas-calopsita-500g-reino-das-aves/petshopexposicao/d5e3cfe0515611ec9f5e4201ac18503a/3bdf063b8c4e24d5eb07e796465e0ea1.jpeg" alt="Mix de Sementes para Pássaros">
+                    <h3>Mix de Sementes para Pássaros</h3>
+                    <p>Um mix nutritivo de sementes variadas para aves.</p>
+                    <span>R$ 35,00</span>
+                    <button onclick="addToCart('Mix de Sementes para Pássaros', 35)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/815630/palha_para_ninho_3285_1_20220329093140.jpg" alt="Ninho para Pássaros">
+                    <h3>Ninho de Palha</h3>
+                    <p>Ideal para pássaros que gostam de construir seus ninhos.</p>
+                    <span>R$ 20,00</span>
+                    <button onclick="addToCart('Ninho de Palha', 20)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://down-br.img.susercontent.com/file/3ce04371cd751131eab55e2435bce2d0" alt="Espelho para Pássaros">
+                    <h3>Espelho para Pássaros</h3>
+                    <p>Um brinquedo divertido que entretém e estimula o pássaro.</p>
+                    <span>R$ 10,00</span>
+                    <button onclick="addToCart('Espelho para Pássaros', 10)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/81fvvFEUZ8S._AC_UF1000,1000_QL80_.jpg" alt="Vara de Poleiro para Pássaros">
+                    <h3>Vara de Poleiro Natural</h3>
+                    <p>Feito com madeira natural, ótimo para relaxar e se empoleirar.</p>
+                    <span>R$ 15,00</span>
+                    <button onclick="addToCart('Vara de Poleiro para Pássaros', 15)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61McGFk++DL._AC_UF894,1000_QL80_.jpg" alt="Cortina de Sombra para Pássaros">
+                    <h3>Cortina de Sombra para Gaiolas</h3>
+                    <p>Proteja seus pássaros do sol forte com essa cortina.</p>
+                    <span>R$ 45,00</span>
+                    <button onclick="addToCart('Cortina de Sombra para Pássaros', 45)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71Jg+GD036L._AC_UF894,1000_QL80_.jpg" alt="Limpador de Gaiola">
+                    <h3>Limpador de Gaiola</h3>
+                    <p>Produto de limpeza especialmente formulado para gaiolas.</p>
+                    <span>R$ 20,00</span>
+                    <button onclick="addToCart('Limpador de Gaiola', 20)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cãotinho Feliz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções - Cãotinho Feliz</title>
+    <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+    <div class="navigation">
+        <h1>Cãotinho Feliz</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="servicos.html">Serviços Pet</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cart.html">Carrinho 🛒</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="gatos.html">Gato</a></li>
+            <li><a href="cachorro.html">Cachorro</a></li>
+            <li><a href="passaro.html">Pássaro</a></li>
+            <li><a href="peixe.html">Peixe</a></li>
+            <li><a href="pets.html">Outros Pets</a></li>
+            <li><a href="casa.html">Casa e Jardim</a></li>
+            <li><a href="promo.html">Promoções</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="promocoes" class="product-category">
+            <h2>Promoções Especiais</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://cdn.awsli.com.br/2593/2593040/produto/259706289a163b2c279.jpg" alt="Terrário para Répteis">
+                    <h3>Terrário para Répteis</h3>
+                    <p>Espaço ideal para répteis com controle de temperatura.</p>
+                    <span class="price-original"><s>R$ 500,00</s></span>
+                    <span class="price-sale">R$ 450,00</span>
+                    <button onclick="addToCart('Terrário para Répteis', 450)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/815630/racao_nutropica_para_hamster_900g_9621_1_5b13baee166c630da740ef168df596c0.jpg" alt="Alimento para Hamsters">
+                    <h3>Ração Nutritiva para Hamsters</h3>
+                    <p>Ração rica em nutrientes e sabor para hamsters.</p>
+                    <span class="price-original"><s>R$ 25,00</s></span>
+                    <span class="price-sale">R$ 20,00</span>
+                    <button onclick="addToCart('Ração Nutritiva para Hamsters', 20)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://cdn.awsli.com.br/600x1000/722/722536/produto/53616008/70c3a24ae1.jpg" alt="Luminária Solar de Jardim">
+                    <h3>Luminária Solar para Jardim</h3>
+                    <p>Iluminação sustentável e econômica para embelezar seu jardim à noite.</p>
+                    <span class="price-original"><s>R$ 90,00</s></span>
+                    <span class="price-sale">R$ 75,00</span>
+                    <button onclick="addToCart('Luminária Solar para Jardim', 75)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ51wp1zsu-AIcehoCxnwEqPoAQtPLmuk7M0c0hcdIQTKbN6h2EhZPwuZwA7Hx7iWqBwarBwiCEfX2xjbjHqpgjS4HFm0GDJNaTGdP-SlA&usqp=CAE" alt="Sementes de Flores Exóticas">
+                    <h3>Sementes de Flores Exóticas</h3>
+                    <p>Pacote com sementes para cultivar flores exóticas e coloridas em seu jardim.</p>
+                    <span class="price-original"><s>R$ 25,00</s></span>
+                    <span class="price-sale">R$ 15,00</span>
+                    <button onclick="addToCart('Sementes de Flores Exóticas', 15)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71JzCei1nYL._AC_UF1000,1000_QL80_.jpg" alt="Brinquedo para Furões">
+                    <h3>Brinquedo para Furões</h3>
+                    <p>Brinquedo resistente e divertido para furões.</p>
+                    <span class="price-original"><s>R$ 45,00</s></span>
+                    <span class="price-sale">R$ 35,00</span>
+                    <button onclick="addToCart('Brinquedo para Furões', 35)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSyg33MwZ0pSxx2i-ds5kv7zr6_pWUkgUAsxcqin6pu9PV09Qd5U7EmRzJPFjymRtUw6R5tCWQ2PjO0DH-RD5tg5hUmDeNIF0bkUgYLrXAW0YNm2xVwBmn19ibAwDXbTdYsQwjIbQ&usqp=CAc" alt="Cercado para Jardim">
+                    <h3>Cercado para Jardim</h3>
+                    <p>Proteja suas plantas e flores com este cercado decorativo e funcional.</p>
+                    <span class="price-original"><s>R$ 100,00</s></span>
+                    <span class="price-sale">R$ 80,00</span>
+                    <button onclick="addToCart('Cercado para Jardim', 80)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/731049/lampada_uvb_10_0_nomoy_pet_para_repteis_13w_nd_09_6x13cm_110v_3265_1_856adc7e8dbb25de26ac14403c51207a.jpg" alt="Lâmpada UVB para Répteis">
+                    <h3>Lâmpada UVB para Répteis</h3>
+                    <p>Fornece a luz essencial para a saúde dos répteis.</p>
+                    <span class="price-original"><s>R$ 90,00</s></span>
+                    <span class="price-sale">R$ 75,00</span>
+                    <button onclick="addToCart('Lâmpada UVB para Répteis', 75)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://a-static.mlcdn.com.br/450x450/rede-dupla-woledoe-cama-de-beliche-pendurada-caber-2-furoes-ou-5-ratos-mais-roxo/nocnoceua/aub0916ddstf/99d5709937be99cff614d3a733691507.jpeg" alt="Cama Suspensa para Furões">
+                    <h3>Cama Suspensa para Furões</h3>
+                    <p>Confortável e prática, perfeita para furões descansarem.</p>
+                    <span class="price-original"><s>R$ 70,00</s></span>
+                    <span class="price-sale">R$ 55,00</span>
+                    <button onclick="addToCart('Cama Suspensa para Furões', 55)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://a-static.mlcdn.com.br/450x450/cadeira-reclinavel-espreguicadeira-piscina-jardim-praia-dubai/dubaiimportadoraedistribuidora/837295/99cac3fbff4fbbba48f10ef57b19e506.jpeg" alt="Espreguiçadeira de Jardim">
+                    <h3>Espreguiçadeira de Jardim</h3>
+                    <p>Espreguiçadeira resistente e confortável para aproveitar os dias ensolarados no jardim.</p>
+                    <span class="price-original"><s>R$ 250,00</s></span>
+                    <span class="price-sale">R$ 200,00</span>
+                    <button onclick="addToCart('Espreguiçadeira de Jardim', 200)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSdvURc-ThIaB9olRUvBNWq5nwZ_t7UtWatDVgChaWNarlMY4SK2W0JXNUHTk3rHa0-yC7KtrFGHm7-uqVwZh2gQfvsTMLgRZqd1GxrzEQuYOstfpsAnldacA&usqp=CAE" alt="Fonte de Água Decorativa">
+                    <h3>Fonte de Água Decorativa</h3>
+                    <p>Adicione um toque relaxante ao seu jardim com esta fonte de água decorativa.</p>
+                    <span class="price-original"><s>R$ 300,00</s></span>
+                    <span class="price-sale">R$ 250,00</span>
+                    <button onclick="addToCart('Fonte de Água Decorativa', 250)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cãotinho Feliz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

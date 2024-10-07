@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cãotinho Feliz</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <h1>Cãotinho Feliz</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="servicos.html">Serviços Pet</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cart.html">Carrinho 🛒</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="gatos.html">Gato</a></li>
+            <li><a href="cachorro.html">Cachorro</a></li>
+            <li><a href="passaro.html">Pássaro</a></li>
+            <li><a href="peixe.html">Peixe</a></li>
+            <li><a href="pets.html">Outros Pets</a></li>
+            <li><a href="casa.html">Casa e Jardim</a></li>
+            <li><a href="promo.html">Promoções</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+        </ul>
+    </div>
+    <div class="carrossel">
+        <div class="slides">
+            <div class="slide active">
+                <img src="Slide1.png" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="Slide2.png" alt="Imagem 2">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+    <div class="content">
+        <h1>Produtos recomendados</h1>
+    </div>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="https://images.petz.com.br/fotos/1721843507057_mini.jpg" alt="Ração PremieR">
+            <p>Super Secão Citrus Tapete Higiênico Petix para Cães - 30 Unidades</p>
+            <span>R$ 70,90</span>
+            <button onclick="addToCart('Super Secão Citrus Tapete', 70.90)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.petz.com.br/fotos/1722975071216_mini.jpg" alt="Areia Higiênica Cansei de Ser Gato">
+            <p>Areia Higiênica Cansei de Ser Gato Biodegradável Grãos Finos</p>
+            <span>R$ 18,49</span>
+            <button onclick="addToCart('Areia Higiênica Cansei de Ser Gato Biodegradável Grãos Finos', 18.49)">Adicionar
+                ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.petz.com.br/fotos/1701977016767_mini.jpg" alt="Bifinho Selections For Pets">
+            <p>Bifinho Selections For Pets Strip para Cães Sabor Carne 60 g</p>
+            <span>R$ 20,99</span>
+            <button onclick="addToCart('Bifinho Selections For Pets Strip para Cães Sabor Carne 60 g', 20.99)">Adicionar
+                ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.petz.com.br/fotos/1658419164771_mini.jpg" alt="Ração Golden Fórmula">
+            <p>Ração Golden Fórmula Mini Bits Para Cães Adultos de Porte Pequeno Sabor Carne e Arroz</p>
+            <span>R$ 18,49</span>
+            <button
+                onclick="addToCart('Ração Golden Fórmula Mini Bits Para Cães Adultos de Porte Pequeno Sabor Carne e Arroz', 18.49)">Adicionar
+                ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.petz.com.br/fotos/1713268716370_mini.jpg" alt="Areia Higiênica Pipicat Classic">
+            <p>Areia Higiênica Pipicat Classic para Gatos</p>
+            <span>R$ 20,99</span>
+            <button onclick="addToCart('Areia Higiênica Pipicat Classic para Gatos', 20.99)">Adicionar ao
+                Carrinho</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cãotinho Feliz</p>
+    </footer>
+    <script>
+        function addToCart(productName, productPrice) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            cart.push({ name: productName, price: productPrice });
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert(`${productName} foi adicionado ao carrinho!`);
+        }
+    </script>
+    <script src="cuca.js"></script>
+</body>
+
+</html>

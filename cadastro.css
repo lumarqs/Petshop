@@ -1,0 +1,191 @@
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navigation {
+    height: 70px;
+    background-image: linear-gradient(45deg, #d9ed92, #b5e48c, #99d98c, #76c893, #52b69a, #34a0a4, #168aad, #1a759f, #1e6091, #184e77);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+    box-shadow: 0px 17px 59px 11px rgba(0, 8, 20, 0.62);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav {
+    height: 70px;
+    background-color: #edf2f4;
+    background-size: 300% 300%;
+    box-shadow: 0px 17px 59px 11px rgba(0, 8, 20, 0.62);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    padding: 10px 15px;
+    text-align: center;
+    align-items: center;
+    align-content: center        ;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.navigation h1 {
+    color: #edf2f4;
+    font-family: sans-serif;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    padding: 10px 15px;
+}
+
+a:hover {
+    background-color: #76c893;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+.forms {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   max-width: 90rem;
+   padding: 4rem;
+   border-radius: 0.5rem;
+   box-shadow: 0 0 1.8rem rgba(0, 0, 0, 0.15);
+   font-size: 20px;
+   justify-content: center;
+   justify-items: center;
+   font-family: sans-serif;
+   justify-self: center;
+}
+
+p {
+    font-size: 1.3125rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 5rem;
+}
+
+label {
+    width: 100%;
+    color: linear-gradient(45deg, #bbd0ff, #b8c0ff, #c8b6ff, #e7c6ff, #ffd6ff);
+    background-size: 300% 300%;
+     animation: colors 15s ease infinite;
+    align-self: flex-start;
+    transition: 0.15s linear;
+}
+
+label:focus-within {
+    color: #743ca1
+}
+
+input {
+    font-size: 1.1875rem;
+    color: linear-gradient(45deg, #bbd0ff, #b8c0ff, #c8b6ff, #e7c6ff, #ffd6ff);
+   background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+    padding: 1rem 0 0.5rem 0;
+    width: 100%;
+    border: none;
+    border-color: #35035e;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    margin-bottom: 3rem;
+    transition: 0.15s linear;
+    align-items: center;
+    justify-content: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: #35035e;
+}
+
+select {
+    font-size: 1.1875rem;
+    color: linear-gradient(45deg, #bbd0ff, #b8c0ff, #c8b6ff, #e7c6ff, #ffd6ff);
+   background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+    padding: 1rem 0 0.5rem 0;
+    width: 100%;
+    border: none;
+    border-color: #35035e;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    margin-bottom: 3rem;
+    transition: 0.15s linear;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    font-size: 0.8125rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: transparent;
+    color: linear-gradient(45deg, #bbd0ff, #b8c0ff, #c8b6ff, #e7c6ff, #ffd6ff);
+    background-size: 300% 300%;
+     animation: colors 15s ease infinite;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    transition: 0.25s;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background-image: linear-gradient(45deg, #bbd0ff, #b8c0ff, #c8b6ff, #e7c6ff, #ffd6ff);
+    background-size: 300% 300%;
+     animation: colors 15s ease infinite;
+    color: #fff;
+}
